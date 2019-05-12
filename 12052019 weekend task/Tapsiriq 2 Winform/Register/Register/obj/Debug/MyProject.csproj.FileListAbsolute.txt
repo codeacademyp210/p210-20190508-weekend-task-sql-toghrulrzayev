@@ -1,0 +1,12 @@
+C:\Users\code\Desktop\12052019 weekend task\Tapsiriq 2 Winform\Register\Register\bin\Debug\Register.exe.config
+C:\Users\code\Desktop\12052019 weekend task\Tapsiriq 2 Winform\Register\Register\bin\Debug\Register.exe
+C:\Users\code\Desktop\12052019 weekend task\Tapsiriq 2 Winform\Register\Register\bin\Debug\Register.pdb
+C:\Users\code\Desktop\12052019 weekend task\Tapsiriq 2 Winform\Register\Register\obj\Debug\MyProject.csprojAssemblyReference.cache
+C:\Users\code\Desktop\12052019 weekend task\Tapsiriq 2 Winform\Register\Register\obj\Debug\Register.Form1.resources
+C:\Users\code\Desktop\12052019 weekend task\Tapsiriq 2 Winform\Register\Register\obj\Debug\Register.Properties.Resources.resources
+C:\Users\code\Desktop\12052019 weekend task\Tapsiriq 2 Winform\Register\Register\obj\Debug\MyProject.csproj.GenerateResource.cache
+C:\Users\code\Desktop\12052019 weekend task\Tapsiriq 2 Winform\Register\Register\obj\Debug\MyProject.csproj.CoreCompileInputs.cache
+C:\Users\code\Desktop\12052019 weekend task\Tapsiriq 2 Winform\Register\Register\obj\Debug\Register.exe
+C:\Users\code\Desktop\12052019 weekend task\Tapsiriq 2 Winform\Register\Register\obj\Debug\Register.pdb
+C:\Users\code\Desktop\12052019 weekend task\Tapsiriq 2 Winform\Register\Register\obj\Debug\Register.Products.resources
+C:\Users\code\Desktop\12052019 weekend task\Tapsiriq 2 Winform\Register\Register\obj\Debug\Register.Register.resources

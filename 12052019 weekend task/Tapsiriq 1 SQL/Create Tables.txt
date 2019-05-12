@@ -1,0 +1,48 @@
+CREATE DATABASE MyDatabase
+
+CREATE TABLE Users(
+	Id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	[Name] nvarchar(50) NOT NULL,
+	[Surname] nvarchar(50) NOT NULL,
+	[Username] nvarchar(50) NOT NULL UNIQUE,
+	Email nvarchar(30) NOT NULL UNIQUE,
+	[Password] nvarchar(25) NOT NULL 
+	 
+);
+
+CREATE TABLE Products(
+	Id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+        [Name] nvarchar(100) NOT NULL,
+	Price INT NOT NULL,
+	CategoryID INT FOREIGN KEY REFERENCES Categories(Id),
+	BrandID INT FOREIGN KEY REFERENCES Brands(Id),
+	Color nvarchar(75) NOT NULL,
+	BarCode INT NOT NULL
+);
+
+
+CREATE TABLE Categories(
+    Id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+    [Name] nvarchar(150) NOT NULL,
+);
+
+CREATE TABLE Brands(
+    Id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+    [Name] nvarchar(150) NOT NULL,
+    CategoryID INT FOREIGN KEY REFERENCES Categories(Id)
+);
+
+CREATE TABLE Stock(
+	Id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	ProductID INT FOREIGN KEY REFERENCES Products(Id),
+	[Count] INT NOT NULL
+);
+
+CREATE TABLE Orders(
+	Id INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	UserID INT FOREIGN KEY REFERENCES Users(Id),
+	ProductID INT FOREIGN KEY REFERENCES Products(Id),
+	ProductCount INT NOT NULL,
+	OrderDate DATE NOT NULL
+);
+

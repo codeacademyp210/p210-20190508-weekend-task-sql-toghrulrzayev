@@ -1,0 +1,69 @@
+INSERT INTO Users([Name],Surname,Username,Email,[Password])
+VALUES ('Toghrul','Rzayev','toghrul123','toghrul1999@mail.ru','12345'),
+('Ekber','Emenov','ekber23','ekber1999@mail.ru','ekber2018'),
+('Murad','Babazade','murad0101','murad1999@mail.ru','muradsalamnecesen'),
+('Hesen','Eliyev','hesen78','hesen1998@mail.ru','hesenaliyev'),
+('Bayram','Kurdexanali','bayramdari','bayram1969@mail.ru','Allah rehmet elesin')
+
+SELECT * FROM Users
+
+INSERT INTO Categories([Name])
+VALUES ('Sok'),
+('Corek'),
+('Lays'),
+('Cay'),
+('Yag'),
+('Pendir')
+
+SELECT * FROM Categories
+
+INSERT INTO Brands([Name],CategoryID)
+VALUES ('Guneshli zavodu', 2),
+('Final Yaglari Zavodu', 5),
+('Acili Cipsiler', 3),
+('Temiz Meyve Shireleri', 1),
+('Kend Pendirleri', 6),
+('Yashil Cay Zavodu', 4)
+
+SELECT * FROM Brands
+
+INSERT INTO Products([Name],Price,CategoryID,BrandID,Color,BarCode)
+VALUES ('Fanta', 1.25, 1, 4, 'narinci', 21212),
+('Sprite', 1.25, 1, 4, 'ag', 1212),
+('Zavod', 0.50, 2, 1, 'narinci', 2932),
+('Tendir', 0.70, 2, 1, 'ag', 21452),
+('Gunebaxan', 3.60, 5, 2, 'narinci', 4544),
+('Chipsim', 2.25, 3, 3, 'qirmizi', 21212),
+('Canag', 4.50, 6, 5, 'ag', 100234),
+('Motal', 7.40, 6, 5, 'ag', 762211),
+('Beta', 2.70, 4, 6, 'qara', 67534)
+
+SELECT * FROM Products
+
+ALTER TABLE Products
+ALTER COLUMN Price FLOAT;
+
+
+
+INSERT INTO Stock(ProductID,[Count])
+VALUES (1,3),
+(2,2),
+(3,1),
+(4,5),
+(7,5),
+(6,10),
+(9,1),
+(8,1),
+(5,1)
+
+SELECT * FROM Stock
+
+
+INSERT INTO Orders(UserID,ProductID,ProductCount,OrderDate)
+VALUES (1,6,3,GETDATE()),
+(2,2,2,GETDATE()),
+(3,4,4,GETDATE()),
+(4,7,2,GETDATE()),
+(5,1,3,GETDATE())
+
+SELECT * FROM Orders
